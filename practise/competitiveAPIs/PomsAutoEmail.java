@@ -4,7 +4,7 @@
  * To change the template for this generated file go to
  * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
  */
-package dts;
+package practise.competitiveAPIs;
 
 import java.sql.SQLException;
 import java.util.*;
@@ -114,7 +114,7 @@ public class PomsAutoEmail {
 					// Set message content and send
 					// Create and fill first part
 					String bp = "<b>সাজানো লেখা </b>";
-					bp += "<br>ধন্যবাদ ";
+					bp += "<br>ধন�?যবাদ ";
 					//bp += "<img src='cid:image'>";
 					MimeBodyPart p1 = new MimeBodyPart();
 					p1.setText(bp);

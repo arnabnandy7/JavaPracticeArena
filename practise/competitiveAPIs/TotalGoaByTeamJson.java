@@ -1,18 +1,6 @@
-package dts;
+package practise.competitiveAPIs;
 
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
-import java.util.stream.*;
-
-import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
-
 import java.net.URL;
 import java.net.HttpURLConnection;
 
@@ -20,7 +8,14 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-public class TotalGoalsInLeagueJson {
+/**
+ * Dependencies : gson-2.3.1.jar
+ * 
+ * @author arnab
+ *
+ */
+
+public class TotalGoaByTeamJson {
 
 	/*
 	 * Complete the 'getTotalGoals' function below.
@@ -29,16 +24,13 @@ public class TotalGoalsInLeagueJson {
 	 * following parameters: 1. STRING team 2. INTEGER year
 	 */
 
-	public static int getWinnerTotalGoals(String competition, int year) {
+	public static int getTotalGoals(String team, int year) {
 		int totalGoals = 0;
 		try {
-			String team = getWinner(competition, year);
-			int team1TotalPages = getTotalPagesForTeam1(competition, team, year);
-			int team2TotalPages = getTotalPagesForTeam2(competition, team, year);
-			totalGoals = getTotalGoalsOfTeam1(competition, team, year,
-					team1TotalPages)
-					+ getTotalGoalsOfTeam2(competition, team, year,
-							team2TotalPages);
+			int team1TotalPages = getTotalPagesForTeam1(team, year);
+			int team2TotalPages = getTotalPagesForTeam2(team, year);
+			totalGoals = getTotalGoalsOfTeam1(team, year, team1TotalPages)
+					+ getTotalGoalsOfTeam2(team, year, team2TotalPages);
 		} catch (Exception e) {
 
 		}
@@ -46,40 +38,14 @@ public class TotalGoalsInLeagueJson {
 		return totalGoals;
 	}
 
-	private static String getWinner(String competition, int year)
+	private static int getTotalGoalsOfTeam1(String team, int year, int pages)
 			throws IOException {
-
-		String winner = "";
-		URL obj = new URL(
-				"https://jsonmock.hackerrank.com/api/football_competitions");
-
-		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-		con.setRequestProperty("name", competition);
-		con.setRequestProperty("year", String.valueOf(year));
-		con.setRequestMethod("GET");
-		int responseCode = con.getResponseCode();
-		if (responseCode == HttpURLConnection.HTTP_OK) { // success
-
-			String response = getResponseContent(con);
-			// print result
-			JsonObject jsonObject = new JsonParser().parse(response.toString())
-					.getAsJsonObject();
-			JsonArray arr = jsonObject.getAsJsonArray("data");
-			winner = arr.get(0).getAsJsonObject().get("winner").getAsString();
-		}
-		return winner;
-	}
-
-	private static int getTotalGoalsOfTeam1(String competition, String team,
-			int year, int pages) throws IOException {
 
 		int totalGoals = 0;
 		for (int i = 1; i <= pages; i++) {
 
 			StringBuilder urlSb = new StringBuilder();
 			urlSb.append("https://jsonmock.hackerrank.com/api/football_matches?");
-			urlSb.append("competition=");
-			urlSb.append(competition.replace(" ", "%20"));
 			urlSb.append("&year=");
 			urlSb.append(year);
 			urlSb.append("&team1=");
@@ -128,14 +94,12 @@ public class TotalGoalsInLeagueJson {
 		return response.toString();
 	}
 
-	private static int getTotalPagesForTeam1(String competition, String team,
-			int year) throws IOException {
+	private static int getTotalPagesForTeam1(String team, int year)
+			throws IOException {
 
 		int totalLines = 0;
 		StringBuilder urlSb = new StringBuilder();
 		urlSb.append("https://jsonmock.hackerrank.com/api/football_matches?");
-		urlSb.append("competition=");
-		urlSb.append(competition.replace(" ", "%20"));
 		urlSb.append("&year=");
 		urlSb.append(year);
 		urlSb.append("&team1=");
@@ -157,15 +121,13 @@ public class TotalGoalsInLeagueJson {
 		return totalLines;
 	}
 
-	private static int getTotalPagesForTeam2(String competition, String team,
-			int year) throws IOException {
+	private static int getTotalPagesForTeam2(String team, int year)
+			throws IOException {
 
 		int totalLines = 0;
 
 		StringBuilder urlSb = new StringBuilder();
 		urlSb.append("https://jsonmock.hackerrank.com/api/football_matches?");
-		urlSb.append("competition=");
-		urlSb.append(competition.replace(" ", "%20"));
 		urlSb.append("&year=");
 		urlSb.append(year);
 		urlSb.append("&team2=");
@@ -186,16 +148,14 @@ public class TotalGoalsInLeagueJson {
 		return totalLines;
 	}
 
-	private static int getTotalGoalsOfTeam2(String competition, String team,
-			int year, int pages) throws IOException {
+	private static int getTotalGoalsOfTeam2(String team, int year, int pages)
+			throws IOException {
 
 		int totalGoals = 0;
 		for (int j = 1; j <= pages; j++) {
 
 			StringBuilder urlSb = new StringBuilder();
 			urlSb.append("https://jsonmock.hackerrank.com/api/football_matches?");
-			urlSb.append("competition=");
-			urlSb.append(competition.replace(" ", "%20"));
 			urlSb.append("&year=");
 			urlSb.append(year);
 			urlSb.append("&team2=");
@@ -226,6 +186,6 @@ public class TotalGoalsInLeagueJson {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(getWinnerTotalGoals("UEFA Champions League", 2011));
+		System.out.println(getTotalGoals("Chelsea", 2014));
 	}
 }

@@ -1,4 +1,4 @@
-package dts;
+package practise.competitiveAPIs;
 
 public class EqualDemo {
 	
