@@ -1,4 +1,4 @@
-package practise.Patterns.singleton;
+package practise.Patterns.Singleton;
 
 import java.io.Serializable;
 import java.util.concurrent.ExecutorService;

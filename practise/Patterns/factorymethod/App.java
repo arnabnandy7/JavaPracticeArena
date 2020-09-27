@@ -1,4 +1,4 @@
-package practise.Patterns.factorymethod;
+package practise.Patterns.FactoryMethod;
 
 /**
  * Reference : https://www.youtube.com/watch?v=EdIwFK0gCm4

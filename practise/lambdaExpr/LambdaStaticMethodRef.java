@@ -1,4 +1,4 @@
-package practise.lambdaExpr;
+package practise.LambdaExpr;
 
 import java.math.BigInteger;
 import java.util.function.Consumer;

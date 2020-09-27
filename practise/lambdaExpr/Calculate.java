@@ -1,4 +1,4 @@
-package practise.lambdaExpr;
+package practise.LambdaExpr;
 
 @FunctionalInterface
 public interface Calculate {

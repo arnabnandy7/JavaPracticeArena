@@ -1,4 +1,4 @@
-package practise.lambdaExpr;
+package practise.LambdaExpr;
 
 import java.util.Arrays;
 import java.util.Collections;

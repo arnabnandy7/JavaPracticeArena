@@ -1,4 +1,4 @@
-package practise.java9.lambdaExprs;
+package practise.Java9.LambdaExprs;
 
 import java.awt.Container;
 import java.awt.FlowLayout;

@@ -1,4 +1,4 @@
-package practise.java9.functionalInterfaces;
+package practise.Java9.FunctionalInterfaces;
 
 import java.time.LocalTime;
 import java.util.Objects;

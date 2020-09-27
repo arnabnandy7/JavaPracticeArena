@@ -1,4 +1,4 @@
-package test;
+package test.oldCompetitivePrograms;
 
 /* package codechef; // don't place package name! */
 

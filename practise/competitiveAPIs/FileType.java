@@ -1,4 +1,4 @@
-package practise.competitiveAPIs;
+package practise.CompetitiveAPIs;
 
 import java.io.IOException;
 import java.nio.*;

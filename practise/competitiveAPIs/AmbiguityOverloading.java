@@ -1,4 +1,4 @@
-package practise.competitiveAPIs;
+package practise.CompetitiveAPIs;
 
 public class AmbiguityOverloading {
 	

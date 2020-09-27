@@ -1,4 +1,4 @@
-package practise.java9;
+package practise.Java9;
 
 public class Parallel {
 

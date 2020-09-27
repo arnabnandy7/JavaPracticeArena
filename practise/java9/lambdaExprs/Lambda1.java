@@ -1,9 +1,9 @@
-package practise.java9.lambdaExprs;
+package practise.Java9.LambdaExprs;
 
 import java.util.Comparator;
 import java.util.function.Consumer;
 
-import practise.java9.functionalInterfaces.Employee;
+import practise.Java9.FunctionalInterfaces.Employee;
 
 public class Lambda1 {
 

@@ -1,11 +1,11 @@
-package practise.java9.methodreference;
+package practise.Java9.MethodReference;
 
 import java.util.Comparator;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-import practise.java9.functionalInterfaces.Employee;
+import practise.Java9.FunctionalInterfaces.Employee;
 
 //interface ThreadSupplier(){
 //	Thread giveMeAThread();

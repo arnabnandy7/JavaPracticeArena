@@ -1,4 +1,4 @@
-package webServices;
+package practise.WebServices;
 
 import java.io.IOException;
 import java.io.PrintWriter;

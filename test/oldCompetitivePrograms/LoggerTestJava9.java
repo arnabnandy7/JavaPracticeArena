@@ -1,4 +1,4 @@
-package test;
+package test.oldCompetitivePrograms;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

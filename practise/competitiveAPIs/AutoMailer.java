@@ -4,7 +4,7 @@
  * To change the template for this generated file go to
  * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
  */
-package practise.competitiveAPIs;
+package practise.CompetitiveAPIs;
 
 import java.sql.SQLException;
 import java.util.*;
@@ -13,7 +13,7 @@ import javax.mail.*;
 import javax.mail.internet.*;
 import javax.activation.*;
 
-public class PomsAutoEmail {
+public class AutoMailer {
 	@SuppressWarnings("unused")
 	private void do_SendEmail(String email) throws SQLException {		
 		String tsql = "";
@@ -114,7 +114,7 @@ public class PomsAutoEmail {
 					// Set message content and send
 					// Create and fill first part
 					String bp = "<b>সাজানো লেখা </b>";
-					bp += "<br>ধন�?যবাদ ";
+					bp += "<br>ধন�?যবাদ ";
 					//bp += "<img src='cid:image'>";
 					MimeBodyPart p1 = new MimeBodyPart();
 					p1.setText(bp);
@@ -177,7 +177,7 @@ public class PomsAutoEmail {
 	public static void main(String[] args) {
 		java.sql.Connection tcon = null;		
 		try {
-			PomsAutoEmail aPAE = new PomsAutoEmail();
+			AutoMailer aPAE = new AutoMailer();
 			try {
 				System.out.println("Started..");
 				String email_id_list="arnabnandy2@gmail.com,arnab_nandy7@yahoo.com";

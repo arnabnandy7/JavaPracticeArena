@@ -1,4 +1,4 @@
-package practise.lambdaExpr;
+package practise.LambdaExpr;
 
 import java.util.function.BinaryOperator;
 import java.util.function.Consumer;

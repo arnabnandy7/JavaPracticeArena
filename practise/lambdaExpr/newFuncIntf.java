@@ -1,4 +1,4 @@
-package practise.lambdaExpr;
+package practise.LambdaExpr;
 
 public class newFuncIntf {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package practise.Patterns.factorymethod;
+package practise.Patterns.FactoryMethod;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package practise.java9;
+package practise.Java9;
 
 import java.util.Random;
 import java.util.function.Supplier;

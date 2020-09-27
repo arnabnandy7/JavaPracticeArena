@@ -1,4 +1,4 @@
-package practise.competitiveAPIs;
+package practise.CompetitiveAPIs;
 
 import java.io.*;
 import java.net.URL;

@@ -1,4 +1,4 @@
-package test;
+package test.oldCompetitivePrograms;
 
 public class IdentifierUnderscore {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package test;
+package test.oldCompetitivePrograms;
 
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
