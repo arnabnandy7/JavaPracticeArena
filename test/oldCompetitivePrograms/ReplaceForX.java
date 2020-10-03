@@ -1,4 +1,4 @@
-package practise.CompetitiveAPIs;
+package test.oldCompetitivePrograms;
 
 import java.util.ArrayList;
 import java.util.Collections;

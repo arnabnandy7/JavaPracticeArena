@@ -1,4 +1,4 @@
-package practise.CompetitiveAPIs;
+package test.oldCompetitivePrograms;
 
 public class CovidRun {
 	public static void main(String[] args) {
