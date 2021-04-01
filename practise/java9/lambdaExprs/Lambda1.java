@@ -7,6 +7,7 @@ import practise.Java9.FunctionalInterfaces.Employee;
 
 public class Lambda1 {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// As usual anonymous class
 		Comparator<Employee> byName = new Comparator<Employee>() {

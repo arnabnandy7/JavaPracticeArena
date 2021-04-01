@@ -6,6 +6,11 @@ import java.util.concurrent.Executors;
 
 class SingletonPatternSolution2 implements Serializable, Cloneable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1144841209607391521L;
+
 	private SingletonPatternSolution2() {
 		System.out.println("Creating....");
 	}

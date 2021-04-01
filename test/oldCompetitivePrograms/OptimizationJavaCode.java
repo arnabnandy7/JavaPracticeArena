@@ -16,6 +16,7 @@ import java.util.logging.Logger;
 
 public class OptimizationJavaCode {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) throws SQLException {
 		long start = TimeUnit.MILLISECONDS
 				.toSeconds(System.currentTimeMillis());

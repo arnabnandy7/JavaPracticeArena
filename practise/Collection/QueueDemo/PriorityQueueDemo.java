@@ -4,6 +4,7 @@ import java.util.*;
 
 public class PriorityQueueDemo {
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args) {
 		PriorityQueue<String> pq = new PriorityQueue();
 		

@@ -6,6 +6,7 @@ import org.apache.commons.collections4.map.MultiKeyMap;
 
 public class MultiMap {
 	
+	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
 		Date pDate = new Date(2019, 31, 8);
 		java.util.Date sDate = new Date(2019, 31, 8);

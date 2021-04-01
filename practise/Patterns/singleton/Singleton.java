@@ -9,6 +9,10 @@ import java.io.Serializable;
 import java.lang.reflect.Constructor;
 
 class TestClassSingletonPattern implements Serializable, Cloneable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 853933826611255528L;
 	private static TestClassSingletonPattern soleInstance = new TestClassSingletonPattern();
 
 	private TestClassSingletonPattern() {
@@ -26,6 +30,7 @@ class TestClassSingletonPattern implements Serializable, Cloneable {
 }
 
 public class Singleton {
+	@SuppressWarnings({ "resource", "rawtypes", "unchecked" })
 	public static void main(String[] args) throws Exception {
 		TestClassSingletonPattern s1 = TestClassSingletonPattern.getInstance();
 		TestClassSingletonPattern s2 = TestClassSingletonPattern.getInstance();
@@ -63,12 +68,12 @@ public class Singleton {
 
 		// If web container and EAR trying to load same class due to some issue
 		// in that case if other is unavailable it'll create it's own
-		
+
 		// Garbage Collection
-		
+
 		// Garbage collection also may trigger violation to singleton
 	}
-	
+
 	static void useSingleton() {
 		TestClassSingletonPattern singleton = TestClassSingletonPattern
 				.getInstance();

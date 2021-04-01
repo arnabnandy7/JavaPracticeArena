@@ -4,6 +4,7 @@ import java.util.*;
 
 public class TreeSetDemo {
 
+	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
 		Set<String> tst = new TreeSet<String>();
 		

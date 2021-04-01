@@ -10,6 +10,7 @@ public class AmbiguityOverloading {
 		System.out.println(i);
 	}
 	
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		AmbiguityOverloading ao=new AmbiguityOverloading();
 		//ao.test1(null);	// It'll throw error

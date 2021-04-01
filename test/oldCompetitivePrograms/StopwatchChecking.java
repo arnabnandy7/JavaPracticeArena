@@ -1,6 +1,5 @@
 package test.oldCompetitivePrograms;
 
-import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
 import com.google.common.base.Stopwatch;

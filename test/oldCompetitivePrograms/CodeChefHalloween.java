@@ -48,6 +48,7 @@ public class CodeChefHalloween {
 		}
 	}
 	
+	@SuppressWarnings("unchecked")
 	private static void recursion(ArrayList<Integer> notSmallestCombination) {
 	    ArrayList<Integer> listTemp = (ArrayList<Integer>) notSmallestCombination.clone();
 	    for (int i = 0; i < notSmallestCombination.size(); i++) {

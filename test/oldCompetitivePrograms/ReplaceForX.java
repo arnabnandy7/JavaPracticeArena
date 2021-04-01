@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class ReplaceForX {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		

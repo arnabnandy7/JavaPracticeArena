@@ -3,6 +3,7 @@ package practise.Java9.LambdaExprs;
 import java.util.function.Consumer;
 
 public class LambdaInference {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// *** Part 1 : identify the FI
 

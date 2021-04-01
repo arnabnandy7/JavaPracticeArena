@@ -5,6 +5,10 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 class TestClassSingletonPatternThread implements Serializable, Cloneable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3269037811160444821L;
 	// private static TestClassSingletonPattern soleInstance = new
 	// TestClassSingletonPattern(); // eager loading
 	private static TestClassSingletonPatternThread soleInstance = null; // lazy

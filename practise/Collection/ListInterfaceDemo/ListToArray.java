@@ -4,6 +4,7 @@ import java.util.*;
 
 public class ListToArray {
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		

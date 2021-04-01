@@ -4,6 +4,7 @@ import java.util.*;
 
 public class LinkedListDemo {
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main (String[] arg) {
 		List ld = new LinkedList<>();
 		ld.add("Chitradeep");

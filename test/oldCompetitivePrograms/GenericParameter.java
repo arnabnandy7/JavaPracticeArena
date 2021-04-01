@@ -5,6 +5,7 @@ import java.util.*;
 
 public class GenericParameter {
 
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		List<String> list=new ArrayList<String>();
@@ -13,6 +14,7 @@ public class GenericParameter {
 
 	}
 	
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static List test1(List x){
 		x.add(1);
 		return x;

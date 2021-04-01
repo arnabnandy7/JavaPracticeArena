@@ -4,6 +4,7 @@ import java.util.*;
 
 public class LinkedHashSetDemo {
 
+	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
 		Set<String> lst = new LinkedHashSet<String>();
 		

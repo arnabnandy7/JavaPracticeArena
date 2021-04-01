@@ -3,6 +3,7 @@ package test.oldCompetitivePrograms;
 import java.util.Scanner;
 
 public class pallindrom {
+	@SuppressWarnings({ "unused", "resource" })
 	public static void main(String args[] ) throws Exception {
 	      int cnt = 0; 
 	      int flag = 0; 

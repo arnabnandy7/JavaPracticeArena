@@ -2,13 +2,11 @@ package test.oldCompetitivePrograms;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class TestPassByReference {
 	private int a;
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		TestPassByReference obj = new TestPassByReference();
 		List<String> sample = new ArrayList<String>();
 		obj.func1(sample);

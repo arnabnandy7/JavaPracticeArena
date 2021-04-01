@@ -12,6 +12,7 @@ import practise.Java9.FunctionalInterfaces.Employee;
 //}
 
 public class MethodReferences {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		// Static method

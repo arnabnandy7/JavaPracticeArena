@@ -4,6 +4,7 @@ import java.util.*;
 import java.util.concurrent.*;
 
 public class LinkedBlockingQueueDemo {
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void main(String[] args) throws InterruptedException {
 		LinkedBlockingQueue lbq = new LinkedBlockingQueue<>();
 		

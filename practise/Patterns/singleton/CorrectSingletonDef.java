@@ -12,6 +12,10 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 class SingletonPatternSolution implements Serializable, Cloneable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8157340485650689526L;
 	private static volatile SingletonPatternSolution soleInstance = null;
 
 	private SingletonPatternSolution() {
@@ -48,6 +52,7 @@ class SingletonPatternSolution implements Serializable, Cloneable {
 }
 
 public class CorrectSingletonDef {
+	@SuppressWarnings({ "rawtypes", "unchecked", "resource" })
 	public static void main(String[] args) throws Exception {
 
 		SingletonPatternSolution s1 = SingletonPatternSolution.getInstance();

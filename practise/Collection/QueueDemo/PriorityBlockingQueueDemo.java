@@ -4,6 +4,7 @@ import java.util.*;
 import java.util.concurrent.*;
 
 public class PriorityBlockingQueueDemo {
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args) throws InterruptedException {
 		PriorityBlockingQueue<String> pbq = new PriorityBlockingQueue();
 		
