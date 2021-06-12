@@ -1,9 +1,7 @@
 package test;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.TreeSet;
 import java.util.stream.Collectors;
 
 class Test1 {
@@ -113,10 +111,10 @@ public class Test
 	
 	public static void main(String[] args) throws InterruptedException 
 	{ 
-		Test t1 = new Test(); 
+		//Test t1 = new Test(); 
 			
 		// making t1 eligible for garbage collection 
-		t1 = null; // line 12 
+	//	t1 = null; // line 12 
 			
 		// calling garbage collector 
 		System.gc(); // line 15 

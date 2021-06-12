@@ -1,9 +1,8 @@
 package test.techgig;
 
-import java.io.*;
 import java.util.*;
 
-public class saveTheCity {
+public class SaveTheCity {
 	public static void main(String args[]) throws Exception {
 
 		// Write code here
