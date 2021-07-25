@@ -1,5 +1,7 @@
 package test;
 
+import java.io.IOException;
+import java.net.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -12,12 +14,23 @@ class Test1 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		System.out.println(y && !x);
-		System.out.println(x || y);
-		x = x || y && !x;
-		y = y && x || y;
-		System.out.println(x);
-		System.out.println(y);
+//		System.out.println(y && !x);
+//		System.out.println(x || y);
+//		x = x || y && !x;
+//		y = y && x || y;
+//		System.out.println(x);
+//		System.out.println(y);
+		URL obj1;
+		try {
+			obj1 = new URL("https://www.google.com/search");
+			URLConnection obj2 = obj1.openConnection();
+			System.out.print(obj2.getContentType());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        
+        
 
 	}
 }
