@@ -22,13 +22,12 @@ public class ArithmeticExpressionEvaluation {
 
 			// Current token is a number,
 			// push it to stack for numbers
-			if (tokens[i] >= '0' && tokens[i] <= '9') {
+			if (Character.isDigit(tokens[i])) {
 				StringBuffer sbuf = new StringBuffer();
 
 				// There may be more than one
 				// digits in number
-				while (i < tokens.length && tokens[i] >= '0'
-						&& tokens[i] <= '9')
+				while (i < tokens.length && Character.isDigit(tokens[i]))
 					sbuf.append(tokens[i++]);
 				values.push(Integer.parseInt(sbuf.toString()));
 
