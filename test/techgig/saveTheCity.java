@@ -12,12 +12,12 @@ public class SaveTheCity {
 		if (tc >= 1 && tc <= 10) {
 			for (int i = 0; i < tc; i++) {
 				String str = sc.nextLine();
-				System.out.println(str);
+				// System.out.println(str);
 				if (str.length() >= 1 && str.length() <= 100000) {
 					List<Character> chArr = findDuplicates(str);
 					if (!chArr.isEmpty()) {
 						Collections.sort(chArr);
-						System.out.println(chArr.get(0));
+						// System.out.println(chArr.get(0));
 					}
 				}
 			}
@@ -41,31 +41,30 @@ public class SaveTheCity {
 		}
 		return rtn;
 	}
-	
-	static char getMaxOccuringChar(String str)
-    {
-        // Create array to keep the count of individual
-        // characters and initialize the array as 0
-        int count[] = new int[256];
-      
-        // Construct character count array from the input
-        // string.
-        int len = str.length();
-        for (int i=0; i<len; i++)
-            count[str.charAt(i)]++;
-      
-        int max = -1;  // Initialize max count
-        char result = ' ';   // Initialize result
-      
-        // Traversing through the string and maintaining
-        // the count of each character
-        for (int i = 0; i < len; i++) {
-            if (max < count[str.charAt(i)]) {
-                max = count[str.charAt(i)];
-                result = str.charAt(i);
-            }
-        }
-      
-        return result;
-    }
+
+	static char getMaxOccuringChar(String str) {
+		// Create array to keep the count of individual
+		// characters and initialize the array as 0
+		int count[] = new int[256];
+
+		// Construct character count array from the input
+		// string.
+		int len = str.length();
+		for (int i = 0; i < len; i++)
+			count[str.charAt(i)]++;
+
+		int max = -1; // Initialize max count
+		char result = ' '; // Initialize result
+
+		// Traversing through the string and maintaining
+		// the count of each character
+		for (int i = 0; i < len; i++) {
+			if (max < count[str.charAt(i)]) {
+				max = count[str.charAt(i)];
+				result = str.charAt(i);
+			}
+		}
+
+		return result;
+	}
 }
