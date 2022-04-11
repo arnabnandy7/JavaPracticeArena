@@ -18,7 +18,7 @@ public class IncludeSqrExtractor {
 
 	public static void main(String[] args) throws IOException {
 		// Input file
-		File fl = new File("C:\\Users\\781710\\Documents\\test\\");
+		File fl = new File("C:\\Users\\Documents\\test\\");
 
 		// Path validation and matching contents
 		if (fl.exists() && fl.isDirectory()) {
